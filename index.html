@@ -8,20 +8,34 @@
 
     <body>
         <!-- Inicio do formulario -->
+        <h1>Pesquisa de endereço usando a API da <a href="https://viacep.com.br/">ViaCep</a></h1>
         <form method="get" action=".">
-            <label>Cep:
+            <div class="linha">
+                <label>Cep:</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                    onblur="pesquisacep(this.value);" /></label><br />
-            <label>Rua:
-                <input name="rua" type="text" id="rua" size="60" /></label><br />
-            <label>Bairro:
-                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-            <label>Cidade:
-                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-            <label>Estado:
-                <input name="uf" type="text" id="uf" size="2" /></label><br />
-            <label>IBGE:
-                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+                    onblur="pesquisacep(this.value);" />
+            </div>
+
+            <div class="linha">
+                <label>Rua:</label>
+                <input name="rua" type="text" id="rua" size="60" />
+            </div>
+            <div class="linha">
+                <label>Bairro:</label>
+                <input name="bairro" type="text" id="bairro" size="40" />
+            </div>
+            <div class="linha">
+                <label class="label_1">Cidade:</label>
+                <input name="cidade" type="text" id="cidade" size="40" />
+            </div>
+            <div class="linha">
+                <label>Estado:</label>
+                <input name="uf" type="text" id="uf" size="2" />
+            </div>
+            <div class="linha">
+                <label>IBGE:</label>
+                <input name="ibge" type="text" id="ibge" size="8" />
+            </div>
         </form>
         <script src="script.js"></script>
     </body>
