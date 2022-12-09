@@ -22,7 +22,7 @@ label {
   position: relative;
   float: left;
   width: 60px;
-  color: blue;
+  color: rgb(0, 0, 0);
 }
 input[type="text"] {
   position: relative;
